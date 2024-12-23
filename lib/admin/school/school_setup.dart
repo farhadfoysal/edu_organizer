@@ -1,3 +1,4 @@
+import 'package:class_organizer/admin/quiz/quiz.dart';
 import 'package:class_organizer/admin/school/exam/exam_routine.dart';
 import 'package:class_organizer/admin/school/pages/courses.dart';
 import 'package:class_organizer/admin/school/pages/departments.dart';
@@ -219,6 +220,8 @@ class _SchoolSetupState extends State<SchoolSetup> {
       Navigator.push(context, MaterialPageRoute(builder: (context) => ExamRoutine()));
     }else if(pageName=='bus'){
       Navigator.push(context, MaterialPageRoute(builder: (context) => BusSchedule()));
+    }else if(pageName=='ExamsPage'){
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Quiz()));
     }else{
 
     }
